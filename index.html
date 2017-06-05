@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Fonts </title>
+  <link href='styles.css' rel='stylesheet'>
+  <link rel="shortcut icon" type="image/jpg" href="google_fonts_lodp.ico"/>
+</head>
+
+  <body>
+    <h1 class="title"> The fantastic fonts of Google and how to use them (Luckiest Guy) </h1>
+
+    <h3> Import Google's font externally (Marko One)</h3>
+    <p class="content"> Every free Google font is hosted on the google api server for public usage.
+      Simply add the following line on top of your css file to import it for immediate use. 
+      For example, I want to use the Sofia font, add the following line to your css file:</p>
+    <div class="code"> 
+      <br>@import url("https://fonts.googleapis.com/css?family=Sofia"); 
+    </div>
+
+    <p> Now you are good to go! Use it like: </p>
+    <div class="code">
+      .sofia-font {
+      <br>font-family: "Sofia";
+      <br>text-align: center;
+      <br>}
+    </div>
+
+    <h3> Import Google's font locally (Marko One) </h3>
+    <p class="content">If you do not have a constant connection to the Google api servers, or running
+      things offline, you will want to download the .woff2 files and have the font saved locally.
+      <br><br>1)<a href="https://www.w3schools.com/howto/howto_google_fonts.asp"> Find</a>
+      the font you want to use, download the woff2 file.
+      <br>2) Click on "Try it" from the w3school page, and grab the source URL which looks like:
+      <br><div class="code">https://fonts.googleapis.com/css?family=ABeeZee</div>
+      <br>3) Go to that URL and find source url which looks like: 
+      <br><br><div class="code">url(https://fonts.gstatic.com/s/abeezee/v10/yTibYMDoFfqshd01j2jrvwLUuEpTyoUstqEm5AMlJo4.woff2)</div>
+      <br>4) Go to that location and save the .woff2 file into your local folder
+      <br>5) Copy the code from the URL in step 2, and paste it into your css file like:
+      <br><div class="code">
+      <br>@font-face {
+      <br>font-family: 'ABeeZee';
+      <br>font-style: normal;
+      <br>font-weight: 400;
+      <br>src: <a style="color: red">url(fonts/ABeeZee.woff2)</a> format('woff2');
+      <br>unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+      <br>}
+      </div>
+      <br>*Notice the <a style="color:red">red</a> above, the path is wherever you saved the woff2 file
+      <br><br>6) Now you are good to go! Use it like:
+      <br><div class="code">
+      <br>.abeezee-font {
+      <br>font-family: "ABeeZee";
+      <br>text-align: center;
+      <br>}
+      </div>
+    </p>
+    
+    <br><br>
+    <div class="sofia-font"> You can simply import the font by using their css (Sofia)</div>
+
+    <div class="aldrich-font"> Or download the woff2 and use it locally  (Aldrich)</div>
+
+    <div class="lora-font"> This is another example of locally saved font face (Lora)
+      <br>ABCDEFGHIJK (Lora)
+      <br>1234567890 (Lora)
+      <br>#@$@#%#@%@@$(^&(%&)) (Lora)
+    </div>
+  </body>
+
+</html>
