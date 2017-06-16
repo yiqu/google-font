@@ -1,2 +1,2 @@
 # google-font
-Tutorial - Google Font Usage
+Tutorial - How to use Google Font in your project.
